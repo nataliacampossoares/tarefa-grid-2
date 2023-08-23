@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Poppins:wght@100;300&display=swap');
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;    
+        }
+
+        .nav{
+            height: 15%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            background-color: black;
+            align-items: center;
+        }
+
+        .canto{
+            display: flex;
+            justify-content: space-evenly;
+            width: 40%;
+        }
+
+        p, h3{
+            color: white;
+            font-family: "Poppins";
+        }
+
+        h3{
+            padding: 40px
+        }
+
+
+        .imagens{
+            display: grid;
+            height: 85%;
+            width: 100%;
+            grid-template-areas: 
+                "im1 im2 im3"
+                "im4 im5 im6";
+            grid-template-rows: 40% 40%;
+            grid-template-columns: 20% 20% 20%;
+            justify-content: center;
+            align-content: center;
+            grid-column-gap: 40px;
+            grid-row-gap: 40px
+        }
+
+        .im1{
+            height: 85%;
+            width: 100%;
+            background-color: rgb(192, 192, 192);
+            grid-area: im1;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+        }
+
+        .im2{
+            height: 85%;
+            width: 100%;
+            background-color: rgb(192, 192, 192);
+            grid-area: im2;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+        }
+
+        .im3{
+            height: 85%;
+            width: 100%;
+            background-color: rgb(192, 192, 192);
+            grid-area: im3;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+        }
+
+        .im4{
+            height: 85%;
+            width: 100%;
+            background-color: rgb(192, 192, 192);
+            grid-area: im4;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+        }
+
+        .im5{
+            height: 85%;
+            width: 100%;
+            background-color: rgb(192, 192, 192);
+            grid-area: im5;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+        }
+
+        .im6{
+            height: 85%;
+            width: 100%;
+            background-color: rgb(192, 192, 192);
+            grid-area: im6;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+        }
+
+        .paragrafo{
+            background-color: white;
+            color: black;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <h3>Logo</h3>
+            <div class="canto">
+                <p>Sobre</p>
+                <p>Produtos</p>
+                <p>Contato</p>
+            </div>
+        </div>
+            <div class="imagens">
+            <div class="im1">  
+                <p class="paragrafo">Bicicletas</p> 
+            </div>                
+            <div class="im2">
+                <p class="paragrafo">Carros</p>
+            </div>
+            <div class="im3">
+                <p class="paragrafo">Barcos</p>
+            </div>
+            <div class="im4">
+                <p class="paragrafo">Calças</p>
+            </div>
+            <div class="im5">
+                <p class="paragrafo">Bermudas</p>
+            </div>
+            <div class="im6">
+                <p class="paragrafo">Camisas</p>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
