@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+                @import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Poppins:wght@100;300&display=swap');
+
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header{
+            height: 15%;
+            width: 100%;
+            background-color: black;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .canto{
+            display: flex;
+            height: 15%;
+            width: 40%;
+            justify-content: space-evenly;
+        }
+
+        p, h3{
+            color: white;
+            font-family: "Poppins";
+        }
+
+        h3{
+            padding: 40px
+        }
+
+        .imagens{
+            display: grid;
+            height: 85%;
+            width: 100%;
+            grid-template-areas: 
+                "im1 im2"
+                "im1 im3";
+            align-items: center;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 50% 50%;
+            justify-items: center;
+            grid-row-gap: 20px;
+            grid-row-gap: 20px
+        }
+
+        .im1{
+            height: 80%;
+            width: 70%;
+            grid-area: im1;
+            background-color: rgb(192, 192, 192);
+            justify-self: end;
+            display: flex;
+            align-items: end
+        }
+
+        .im2{
+            height: 80%;
+            width: 70%;
+            grid-area: im2;
+            background-color: rgb(192, 192, 192);
+            justify-self: center;
+            align-self: end;
+            display: flex;
+            align-items: end
+        }
+
+        .im3{
+            height: 80%;
+            width: 70%;
+            grid-area: im3;
+            background-color: rgb(192, 192, 192);
+            justify-self: center;
+            align-self: start;
+            display: flex;
+            align-items: end
+        }
+
+        .paragrafo{
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: start;
+            width: 100%;
+            padding: 15px
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h3>Logo</h3>
+            <div class="canto">
+                <p>Sobre</p>
+                <p>Produtos</p>
+                <p>Contato</p>
+            </div>
+        </header>
+        <div class="imagens">
+            <div class="im1">
+                <p class="paragrafo">Legenda Imagem</p>
+            </div>
+            <div class="im2">
+                <p class="paragrafo">Legenda Imagem</p>
+            </div>
+            <div class="im3">
+                <p class="paragrafo">Legenda Imagem</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
